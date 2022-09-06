@@ -1,1 +1,3 @@
-*/Main.java
+build/
+.idea/
+.gradle/
