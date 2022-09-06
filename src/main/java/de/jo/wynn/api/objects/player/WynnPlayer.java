@@ -1,10 +1,9 @@
 package de.jo.wynn.api.objects.player;
 
-import de.jo.wynn.api.impl.player.WynnPlayerResponse;
-import de.jo.wynn.api.impl.player.impl.GuildDataSimple;
-import de.jo.wynn.api.impl.player.impl.PlayerNetworkInformation;
-import de.jo.wynn.api.impl.player.impl.PlayerRanking;
-import de.jo.wynn.api.impl.player.impl.gameclass.WynnClass;
+import de.jo.wynn.api.requests.player.WynnPlayerResponse;
+import de.jo.wynn.api.requests.player.impl.GuildDataSimple;
+import de.jo.wynn.api.requests.player.impl.PlayerNetworkInformation;
+import de.jo.wynn.api.requests.player.impl.gameclass.WynnClass;
 
 import java.util.List;
 
