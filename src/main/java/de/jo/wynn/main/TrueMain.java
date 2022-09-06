@@ -1,4 +1,4 @@
-package de.jo.wynn;
+package de.jo.wynn.main;
 
 import de.jo.wynn.api.WynnCraftAPI;
 import de.jo.wynn.api.data.WynnRecipeData;
