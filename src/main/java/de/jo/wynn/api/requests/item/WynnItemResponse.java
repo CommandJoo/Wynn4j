@@ -7,7 +7,7 @@ import de.jo.wynn.api.requests.Response;
 
 import java.util.List;
 
-public class ItemDatabaseResponse extends Response {
+public class WynnItemResponse extends Response {
     @Expose
     public List<WynnItemData> items;
     @Expose

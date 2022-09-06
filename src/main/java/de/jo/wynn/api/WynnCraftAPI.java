@@ -5,8 +5,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import de.jo.wynn.api.data.WynnItemData;
-import de.jo.wynn.api.requests.item.ItemDatabaseRequest;
-import de.jo.wynn.api.requests.item.ItemDatabaseResponse;
+import de.jo.wynn.api.requests.item.WynnItemRequest;
+import de.jo.wynn.api.requests.item.WynnItemResponse;
 import de.jo.wynn.api.requests.network.NetworkPlayerSumRequest;
 import de.jo.wynn.api.requests.network.NetworkPlayerSumResponse;
 import de.jo.wynn.api.requests.player.WynnPlayerRequest;
@@ -99,7 +99,7 @@ public class WynnCraftAPI {
     }
     public List<WynnItem> items(String name) {
         try {
-            List<WynnItemData> datas = (((ItemDatabaseResponse)request(new ItemDatabaseRequest(ItemDatabaseRequest.Query.NAME, name)))).items;
+            List<WynnItemData> datas = (((WynnItemResponse)request(new WynnItemRequest(WynnItemRequest.Query.NAME, name)))).items;
             List<WynnItem> items = new ArrayList<>();
             for(WynnItemData data : datas) {
                 items.add(new WynnItem(data));

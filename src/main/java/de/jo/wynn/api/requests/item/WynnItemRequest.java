@@ -4,9 +4,9 @@ import com.google.gson.Gson;
 import de.jo.wynn.api.requests.Request;
 import de.jo.wynn.api.requests.Response;
 
-public class ItemDatabaseRequest extends Request {
-    public ItemDatabaseRequest(Query query, String search) {
-        super(ItemDatabaseResponse.class, PHP_QUERY+"itemDB&"+query.getQueryName()+"="+search);
+public class WynnItemRequest extends Request {
+    public WynnItemRequest(Query query, String search) {
+        super(WynnItemResponse.class, PHP_QUERY+"itemDB&"+query.getQueryName()+"="+search);
     }
 
     @Override
