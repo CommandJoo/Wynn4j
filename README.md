@@ -13,7 +13,7 @@ are provided or using custom requests allowing the user to access all Api-Endpoi
 You can use this api by adding the JitPack repository to your ```build.gradle``` File.
 ```groovy
 repositories {
-    //... your other repositories
+    //... your other repos
 	maven { url 'https://jitpack.io' }
 }
 ```
