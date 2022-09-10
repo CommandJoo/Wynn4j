@@ -21,7 +21,7 @@ And then adding the project to your dependencies
 ```groovy
 dependencies {
     //... your dependencies
-    implementation 'com.github.CommandJoo:Wynn4j:1.0.0'
+    implementation 'com.github.CommandJoo:Wynn4j:v1.0.0'
 }
 ```
 
