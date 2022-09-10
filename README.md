@@ -19,7 +19,7 @@ repositories {
 And then adding the project to your dependencies
 ```groovy
 dependencies {
-    implementation 'com.github.CommandJoo:Wynn4j:35be10224d'
+    implementation 'com.github.CommandJoo:Wynn4j:1.0.0'
 }
 ```
 
