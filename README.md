@@ -13,14 +13,14 @@ are provided or using custom requests allowing the user to access all Api-Endpoi
 You can use this api by adding the JitPack repository to your ```build.gradle``` File.
 ```groovy
 repositories {
-    //... your repositories
+    //... your other repositories
 	maven { url 'https://jitpack.io' }
 }
 ```
 And then adding the project to your dependencies
 ```groovy
 dependencies {
-    //... your dependencies
+    //... your other dependencies
     implementation 'com.github.CommandJoo:Wynn4j:v1.0.0'
 }
 ```
