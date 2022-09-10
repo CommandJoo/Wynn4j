@@ -8,6 +8,7 @@ Wynn4j is an easy to use api for ```Java``` that allows you
 to either directly access WynnCraft Api Objects by using the built-in methods that 
 are provided or using custom requests allowing the user to access all Api-Endpoints
 
+
 ## Importing
 You can use this api by adding the JitPack repository to your ```build.gradle``` File.
 ```groovy
@@ -21,6 +22,7 @@ dependencies {
     implementation 'com.github.CommandJoo:Wynn4j:35be10224d'
 }
 ```
+
 
 ## Usage
 
