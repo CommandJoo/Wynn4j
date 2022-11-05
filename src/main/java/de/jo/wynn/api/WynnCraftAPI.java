@@ -71,7 +71,6 @@ public class WynnCraftAPI {
 
 
         Response response = r.response(gson, StringHelper.prettyJson(resp));
-
         if (response == null) {
             debugger.debug("No Response found", Debugger.DebugType.WARNING);
         } else {
@@ -85,6 +84,7 @@ public class WynnCraftAPI {
         try {
             return new WynnPlayer(((WynnPlayerResponse) request(new WynnPlayerRequest(nameOrUUID))).data.get(0));
         } catch (Exception ex) {
+            ex.printStackTrace();
             debugger.debug("Could not find WynnPlayer: " + nameOrUUID + "!", Debugger.DebugType.ERROR);
             return null;
         }

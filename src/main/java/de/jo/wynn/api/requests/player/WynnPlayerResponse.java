@@ -9,6 +9,7 @@ import de.jo.wynn.api.requests.player.impl.gameclass.WynnClass;
 import de.jo.wynn.api.requests.impl.rest.RestResponse;
 import de.jo.wynn.util.StringHelper;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class WynnPlayerResponse extends RestResponse {
@@ -27,7 +28,7 @@ public class WynnPlayerResponse extends RestResponse {
         @Expose
         public PlayerNetworkInformation meta;
         @Expose
-        public List<WynnClass> classes;
+        public HashMap<String, WynnClass> characters;
         @Expose
         public GuildDataSimple guild;
         @Expose

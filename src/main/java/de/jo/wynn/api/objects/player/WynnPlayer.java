@@ -5,6 +5,7 @@ import de.jo.wynn.api.requests.player.impl.GuildDataSimple;
 import de.jo.wynn.api.requests.player.impl.PlayerNetworkInformation;
 import de.jo.wynn.api.requests.player.impl.gameclass.WynnClass;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class WynnPlayer {
@@ -33,15 +34,12 @@ public class WynnPlayer {
         return this.data.meta;
     }
 
-    public List<WynnClass> getPlayerClasses() {
-        return this.data.classes;
+    public HashMap<String, WynnClass> getPlayerClasses() {
+        return this.data.characters;
     }
 
-    public WynnClass getPlayerClass(String name) {
-        for(WynnClass wynnClass : getPlayerClasses()) {
-            if(wynnClass.name.equalsIgnoreCase(name)) return wynnClass;
-        }
-        return null;
+    public WynnClass getPlayerClass(String uuid) {
+        return getPlayerClasses().get(uuid);
     }
 
     public GuildDataSimple getGuild() {

@@ -2,4 +2,4 @@ build/
 .idea/
 .gradle/
 gradle/
-src/main/java/de/jo/wynn/main/
+src/main/java/de/jo/wynn/main/TrueMain.java

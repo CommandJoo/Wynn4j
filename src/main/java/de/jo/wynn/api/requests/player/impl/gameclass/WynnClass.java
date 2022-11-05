@@ -8,11 +8,13 @@ import de.jo.wynn.util.StringHelper;
 public class WynnClass {
 
     @Expose
-    public String name;
+    public String type;
     @Expose
     public float level;
     @Expose
     public Dungeons dungeons;
+    @Expose
+    public Raids raids;
     @Expose
     public Quests quests;
     @Expose
@@ -21,8 +23,6 @@ public class WynnClass {
     public int mobsKilled;
     @Expose
     public PlayerGlobal.PvP pvp;
-    @Expose
-    public int chestsFound;
     @Expose
     public float blocksWalked;
     @Expose

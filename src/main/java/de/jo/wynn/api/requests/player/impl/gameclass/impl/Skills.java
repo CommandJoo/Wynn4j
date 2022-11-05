@@ -12,6 +12,8 @@ public class Skills {
     @Expose
     public float intelligence;
     @Expose
+    public float defence;
+    @Expose
     public float defense;
     @Expose
     public float agility;

@@ -11,6 +11,8 @@ public class GameMode {
     public boolean hardcore;
     @Expose
     public boolean ironman;
+    @Expose
+    public boolean hunted;
 
     @Override
     public String toString() {
